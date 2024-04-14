@@ -1,1 +1,12 @@
-a.txt
+
+git 命令学习
+git status #工作树状态
+git add XXX.py  #从工作区添加到暂存区
+git commit -m "XXXX"  #提交到本地仓库 XXX备注
+git push origin XXX  #推送到远程仓库 XX分支名
+git branch #查看分支名
+git log #查看提交记录
+git pull #远端仓库内容更新到本地仓库
+git checkout XXX #从当前分支切换到已经存在的目标分支
+git checkout -b XXX #创建新分支XXX并切换到XXX
+git merge main #同步main分支的信息到当前分支
