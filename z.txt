@@ -10,3 +10,16 @@ git pull #远端仓库内容更新到本地仓库
 git checkout XXX #从当前分支切换到已经存在的目标分支
 git checkout -b XXX #创建新分支XXX并切换到XXX
 git merge main #同步main分支的信息到当前分支
+
+
+git branch branchname         ### 创建一个本地分支
+git push -u origin branch_2   ## 将新的本地分支作为备份
+git branch -d branch_2        # 删除本地分支，这不会让你删除尚未合并的分支
+git branch -D branch_2        # 删除本地分支，即使尚未合并，这也会删除该分支！
+git branch -a                 ## 查看存储库的所有当前分支，包括本地和远程分支。
+git branch -a --merged        ### 查看已合并到您当前分支中的所有分支，包括本地和远程。 非常适合查看所有代码的来源！
+git branch -a --no-merged     ### 查看尚未合并到当前分支中的所有分支，包括本地和远程
+git branch -r                 ### 查看所有远程分支
+git rebase origin/master      # 将主分支重新设置为本地分支
+git push origin branchname    # 将分支推送到远程存储库源并对其进行跟踪
+
